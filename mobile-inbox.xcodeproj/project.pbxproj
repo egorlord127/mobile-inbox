@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1819F5C6D7F6F4250134DCCF /* Pods_mobile_inbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166383F19DD754F4C643149C /* Pods_mobile_inbox.framework */; };
 		84CC2ACC1F2267BB00D2BA89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC2ACB1F2267BB00D2BA89 /* AppDelegate.swift */; };
 		84CC2ACE1F2267BB00D2BA89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC2ACD1F2267BB00D2BA89 /* ViewController.swift */; };
 		84CC2AD11F2267BB00D2BA89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CC2ACF1F2267BB00D2BA89 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13192274EAFFA54DAF72BBAC /* Pods-mobile-inbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.debug.xcconfig"; sourceTree = "<group>"; };
+		166383F19DD754F4C643149C /* Pods_mobile_inbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_inbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19CA5104C4DF6E6A794E2FB8 /* Pods-mobile-inbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.release.xcconfig"; sourceTree = "<group>"; };
 		84CC2AC81F2267BB00D2BA89 /* mobile-inbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-inbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CC2ACB1F2267BB00D2BA89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84CC2ACD1F2267BB00D2BA89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1819F5C6D7F6F4250134DCCF /* Pods_mobile_inbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		837EB7CD6FC6C96D33257A3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				166383F19DD754F4C643149C /* Pods_mobile_inbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84CC2ABF1F2267BB00D2BA89 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				84CC2ADF1F2267BB00D2BA89 /* mobile-inboxTests */,
 				84CC2AEA1F2267BB00D2BA89 /* mobile-inboxUITests */,
 				84CC2AC91F2267BB00D2BA89 /* Products */,
+				FB71F43FDB436001CECEEB0C /* Pods */,
+				837EB7CD6FC6C96D33257A3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = "mobile-inboxUITests";
 			sourceTree = "<group>";
 		};
+		FB71F43FDB436001CECEEB0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13192274EAFFA54DAF72BBAC /* Pods-mobile-inbox.debug.xcconfig */,
+				19CA5104C4DF6E6A794E2FB8 /* Pods-mobile-inbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84CC2AF01F2267BB00D2BA89 /* Build configuration list for PBXNativeTarget "mobile-inbox" */;
 			buildPhases = (
+				238C2CFE1D0CA7BF8D91D744 /* [CP] Check Pods Manifest.lock */,
 				84CC2AC41F2267BB00D2BA89 /* Sources */,
 				84CC2AC51F2267BB00D2BA89 /* Frameworks */,
 				84CC2AC61F2267BB00D2BA89 /* Resources */,
+				B2C3222731A3DCDA13CCB5A3 /* [CP] Embed Pods Frameworks */,
+				D3ADF839ADA2FB31BB3CDD5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		238C2CFE1D0CA7BF8D91D744 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C3222731A3DCDA13CCB5A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3ADF839ADA2FB31BB3CDD5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84CC2AC41F2267BB00D2BA89 /* Sources */ = {
@@ -412,6 +487,7 @@
 		};
 		84CC2AF11F2267BB00D2BA89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13192274EAFFA54DAF72BBAC /* Pods-mobile-inbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mobile-inbox/Info.plist";
@@ -424,6 +500,7 @@
 		};
 		84CC2AF21F2267BB00D2BA89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CA5104C4DF6E6A794E2FB8 /* Pods-mobile-inbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mobile-inbox/Info.plist";
