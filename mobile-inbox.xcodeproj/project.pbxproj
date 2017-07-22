@@ -10,6 +10,7 @@
 		1819F5C6D7F6F4250134DCCF /* Pods_mobile_inbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166383F19DD754F4C643149C /* Pods_mobile_inbox.framework */; };
 		849E3C061F22731300116DF7 /* RestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E3C051F22731300116DF7 /* RestProtocol.swift */; };
 		849E3C081F22759700116DF7 /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E3C071F22759700116DF7 /* RestHelper.swift */; };
+		849E3C0A1F23332700116DF7 /* AuthCookieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E3C091F23332700116DF7 /* AuthCookieClient.swift */; };
 		84CC2ACC1F2267BB00D2BA89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC2ACB1F2267BB00D2BA89 /* AppDelegate.swift */; };
 		84CC2ACE1F2267BB00D2BA89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC2ACD1F2267BB00D2BA89 /* ViewController.swift */; };
 		84CC2AD11F2267BB00D2BA89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CC2ACF1F2267BB00D2BA89 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		19CA5104C4DF6E6A794E2FB8 /* Pods-mobile-inbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.release.xcconfig"; sourceTree = "<group>"; };
 		849E3C051F22731300116DF7 /* RestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestProtocol.swift; path = OpenIAM/Sources/RestProtocol.swift; sourceTree = "<group>"; };
 		849E3C071F22759700116DF7 /* RestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestHelper.swift; path = OpenIAM/Sources/RestHelper.swift; sourceTree = "<group>"; };
+		849E3C091F23332700116DF7 /* AuthCookieClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthCookieClient.swift; path = OpenIAM/Sources/AuthCookieClient.swift; sourceTree = "<group>"; };
 		84CC2AC81F2267BB00D2BA89 /* mobile-inbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-inbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CC2ACB1F2267BB00D2BA89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84CC2ACD1F2267BB00D2BA89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				849E3C051F22731300116DF7 /* RestProtocol.swift */,
 				849E3C071F22759700116DF7 /* RestHelper.swift */,
+				849E3C091F23332700116DF7 /* AuthCookieClient.swift */,
 			);
 			name = Auth;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849E3C061F22731300116DF7 /* RestProtocol.swift in Sources */,
+				849E3C0A1F23332700116DF7 /* AuthCookieClient.swift in Sources */,
 				849E3C081F22759700116DF7 /* RestHelper.swift in Sources */,
 				84CC2ACE1F2267BB00D2BA89 /* ViewController.swift in Sources */,
 				84CC2ACC1F2267BB00D2BA89 /* AppDelegate.swift in Sources */,

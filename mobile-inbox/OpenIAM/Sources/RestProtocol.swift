@@ -35,11 +35,11 @@ protocol RestProtocol {
                password: String,
                completionHandler: @escaping (RestResponse) -> Void)
     
-    func apiCall(_ path: String,
-                 method: HTTPMethod,
-                 parameters: Parameters?,
-                 withRetryCount: Int,
-                 inBackground: Bool,
-                 completionHandler: @escaping (RestResponse) -> Void)
+//    func apiCall(_ path: String,
+//                 method: HTTPMethod,
+//                 parameters: Parameters?,
+//                 withRetryCount: Int,
+//                 inBackground: Bool,
+//                 completionHandler: @escaping (RestResponse) -> Void)
     
 }
