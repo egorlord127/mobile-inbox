@@ -94,7 +94,7 @@ class AuthCookieClient: RestHelper, RestProtocol {
                 completionHandler(response)
             }
             
-            print("Successfully logged")
+            print("Successfully logged in OpenIAM")
             
         }
     }
