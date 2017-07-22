@@ -29,6 +29,7 @@ class RestHelper {
         }
     }
     // MARK: - Rest helper functions
+    @discardableResult
     static func restCall(_ url: String,
                          method: HTTPMethod = .post,
                          parameters: Parameters? = nil,
